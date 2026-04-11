@@ -20,6 +20,11 @@ export function Header() {
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-2">
               <a href="/" className="flex items-center gap-2">
+                <img
+                  src="/oifi-icon.png"
+                  alt="OIFI"
+                  className="h-7 w-7 dark:invert"
+                />
                 <span className="text-xl font-semibold tracking-tight text-foreground">
                   OIFI
                 </span>
@@ -37,6 +42,14 @@ export function Header() {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="https://databook.oifi.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Databook ↗
+              </a>
             </div>
 
             <div className="hidden md:flex md:items-center md:gap-4">
@@ -76,6 +89,15 @@ export function Header() {
                     {item.label}
                   </a>
                 ))}
+                <a
+                  href="https://databook.oifi.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Databook ↗
+                </a>
                 <Button
                   variant="default"
                   size="sm"
