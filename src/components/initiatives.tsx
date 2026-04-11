@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Database, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/contact-form";
 
 export function Initiatives() {
+  const [contactOpen, setContactOpen] = useState(false);
   return (
+    <>
     <section id="initiatives" className="py-20 md:py-28 bg-card">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -50,9 +54,11 @@ export function Initiatives() {
                   </div>
 
                   <div className="mt-8">
-                    <Button variant="outline" size="sm">
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="https://databook.oifi.org/" target="_blank" rel="noopener noreferrer">
+                        Learn More
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -62,12 +68,18 @@ export function Initiatives() {
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
             More initiatives coming soon. Want to contribute?{" "}
-            <a href="#" className="font-medium text-foreground hover:underline">
+            <button
+              onClick={() => setContactOpen(true)}
+              className="font-medium text-foreground hover:underline"
+            >
               Get in touch
-            </a>
+            </button>
           </p>
         </div>
       </div>
     </section>
+
+    <ContactForm open={contactOpen} onOpenChange={setContactOpen} />
+  </>
   );
 }

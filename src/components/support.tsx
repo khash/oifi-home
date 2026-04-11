@@ -71,7 +71,7 @@ export function Support() {
                   className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                   asChild
                 >
-                  <a href="#">Share Our Mission</a>
+                  <a href="https://oifi.org/" target="_blank" rel="noopener noreferrer">Share Our Mission</a>
                 </Button>
               </div>
             </div>
