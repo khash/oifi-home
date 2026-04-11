@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_FORMS_API_URL as string;
+const API_URL = "https://ozgivaw2k7.execute-api.us-east-2.amazonaws.com/prod/submit";
 
 interface SubmitOptions {
   formType: string;
