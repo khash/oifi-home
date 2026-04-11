@@ -12,7 +12,8 @@ export async function submitForm({ formType, data }: SubmitOptions): Promise<{ m
     body: JSON.stringify({ formType, site: "oifi", ...data }),
   });
 
-  const json = await res.json();
+  const text = await res.text();
+  const json = text ? JSON.parse(text) : {};
   if (!res.ok) {
     throw new Error(json.message || "Something went wrong");
   }
