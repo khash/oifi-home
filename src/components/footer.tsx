@@ -2,6 +2,7 @@ const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Charter", href: "/charter" },
   { label: "Initiatives", href: "/#initiatives" },
+  { label: "Terms", href: "/terms" },
 ];
 
 const projectLinks = [
