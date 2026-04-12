@@ -12,13 +12,13 @@ export function Hero() {
           </p>
 
           <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl text-balance">
-            Open Information For Iran
+            Iran cannot be silenced
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Dedicated to making information about Iran freely accessible to the world —
-            and to ensuring people inside Iran can access it too. We believe the free
-            flow of knowledge is a right, not a privilege.
+            OIFI keeps the people of Iran connected to the world, and keeps the
+            world informed about Iran — during shutdowns, censorship, and
+            attempts to impose digital isolation.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -29,7 +29,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <a href="#charter">
+              <a href="/charter">
                 Read Our Charter
               </a>
             </Button>

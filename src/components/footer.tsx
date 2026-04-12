@@ -1,7 +1,7 @@
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Charter", href: "#charter" },
-  { label: "Initiatives", href: "#initiatives" },
+  { label: "About", href: "/#about" },
+  { label: "Charter", href: "/charter" },
+  { label: "Initiatives", href: "/#initiatives" },
 ];
 
 const projectLinks = [
@@ -20,8 +20,8 @@ export function Footer() {
               <span className="text-xl font-semibold text-foreground">OIFI</span>
             </a>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Open Information For Iran. A non-profit working to make information
-              freely accessible — to the world, and from within Iran.
+              Open Information For Iran. A non-profit keeping Iran connected to
+              the world, and the world informed about Iran.
             </p>
           </div>
 

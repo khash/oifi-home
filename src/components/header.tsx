@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { ContactForm } from "@/components/contact-form";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Charter", href: "#charter" },
-  { label: "Initiatives", href: "#initiatives" },
+  { label: "About", href: "/#about" },
+  { label: "Charter", href: "/charter" },
+  { label: "Initiatives", href: "/#initiatives" },
 ];
 
 export function Header() {

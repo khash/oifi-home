@@ -1,35 +1,36 @@
-import { Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const principles = [
+const objectives = [
   {
-    title: "Commitment to Accuracy",
+    title: "Connectivity Continuity",
     description:
-      "All information published undergoes rigorous verification processes. We cite primary sources and clearly distinguish between facts and analysis.",
+      "During shutdowns, a meaningful portion of the population must retain access to external communication.",
   },
   {
-    title: "Political Independence",
+    title: "Outbound Information Integrity",
     description:
-      "OIFI maintains strict independence from any government, political party, or interest group. Our work serves knowledge, not agendas.",
+      "Verifiable information — visual evidence, eyewitness reporting, situational data — must continue to flow out of Iran.",
   },
   {
-    title: "Open Methodology",
+    title: "Internal Coordination",
     description:
-      "Our research methods are publicly documented. We welcome peer review and constructive criticism to improve our work.",
+      "Local, peer-to-peer communication independent of centralized infrastructure, usable within cities and communities.",
   },
   {
-    title: "Accessibility",
+    title: "Resistance to Digital Isolation",
     description:
-      "Information should be available to all. We provide resources in multiple formats and work to reduce barriers to access.",
+      "Persistent bridges to the global internet that counter the development of a fully enclosed national intranet.",
   },
   {
-    title: "Ethical Standards",
+    title: "User Safety",
     description:
-      "We adhere to the highest ethical standards in research and data handling, protecting sources and respecting privacy.",
+      "Tools that minimize detection risk. Adoption must not increase exposure to retaliation.",
   },
   {
-    title: "Collaborative Spirit",
+    title: "Global Visibility",
     description:
-      "We partner with academic institutions, civil society organizations, and independent researchers to strengthen our collective impact.",
+      "Events inside Iran remain visible externally, independent of state-controlled narratives.",
   },
 ];
 
@@ -39,34 +40,44 @@ export function Charter() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Our Charter
+            What We Work Toward
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            The principles that guide everything we do. These commitments define
-            who we are and how we operate.
+            Seven strategic objectives drawn from our founding charter. Each one
+            shapes the infrastructure we build, the tools we ship, and the data
+            we make public.
           </p>
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl">
           <div className="grid gap-6 md:grid-cols-2">
-            {principles.map((principle) => (
+            {objectives.map((objective, i) => (
               <div
-                key={principle.title}
+                key={objective.title}
                 className="flex gap-4 rounded-lg border border-border bg-card p-6"
               >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <Check className="h-4 w-4 text-accent-foreground" />
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-mono text-accent-foreground">
+                  {i + 1}
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">
-                    {principle.title}
+                    {objective.title}
                   </h3>
                   <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                    {principle.description}
+                    {objective.description}
                   </p>
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Button variant="outline" size="lg" asChild>
+              <a href="/charter">
+                Read the Full Charter
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
           </div>
         </div>
       </div>

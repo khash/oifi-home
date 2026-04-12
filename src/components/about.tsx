@@ -1,23 +1,23 @@
-import { Globe, Lock, Users } from "lucide-react";
+import { Radio, Eye, ShieldCheck } from "lucide-react";
 
 const values = [
   {
-    icon: Globe,
-    title: "Open Access",
+    icon: Radio,
+    title: "Connectivity Continuity",
     description:
-      "We believe information should flow freely in both directions — to the world about Iran, and to people inside Iran who face censorship and restrictions.",
+      "During shutdowns, a meaningful portion of the population must retain access to external communication. Connectivity should be degraded — never eliminated.",
   },
   {
-    icon: Lock,
-    title: "Transparency",
+    icon: Eye,
+    title: "Global Visibility",
     description:
-      "Our methodologies, sources, and processes are documented and available for public scrutiny.",
+      "Events inside Iran must remain visible to the outside world, with verifiable information flowing out continuously — independent of state-controlled narratives.",
   },
   {
-    icon: Users,
-    title: "Community-Driven",
+    icon: ShieldCheck,
+    title: "User Safety",
     description:
-      "We collaborate with researchers, journalists, and advocates worldwide to ensure accuracy and relevance.",
+      "Tools and systems are designed to minimize detection risk. Adoption must never increase exposure to retaliation.",
   },
 ];
 
@@ -30,11 +30,13 @@ export function About() {
             About OIFI
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
-            The Open Information For Iran initiative is a non-profit organization with a
-            dual mission: making accurate, well-sourced information about Iran available
-            to the world, and helping people inside Iran circumvent censorship to freely
-            access information themselves. We work with researchers, technologists,
-            journalists, and civil society to keep knowledge open in both directions.
+            Open Information For Iran is a non-profit countering two forces at
+            once: the Iranian state's ability to disconnect its population from
+            the global internet, and its ability to obscure events inside the
+            country from the outside world. We build infrastructure,
+            circumvention tools, and open datasets so that people inside Iran
+            can communicate, and so that the world can continue to see and
+            understand what happens there.
           </p>
         </div>
 
