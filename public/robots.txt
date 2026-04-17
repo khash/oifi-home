@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://oifi.org/sitemap.xml
-Sitemap: https://databook.oifi.org/sitemap.xml
+Sitemap: https://databook.oifi.org/sitemap-index.xml
